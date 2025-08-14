@@ -107,24 +107,23 @@ document.write(perimetro); */
 
 
     //ejercicio 7
-/* 
-    const num = +prompt("Tablas (2-11):");
+//Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
 
+/* let numero = +prompt("Ingrese un número del 2 al 11:");
+
+function mostrarTablaMultiplicar(num) {
     if (num < 2 || num > 11 || isNaN(num)) {
-    document.write("Tabla no disponible");
-        } else {
-    document.write(`<h2>Tabla del ${num}</h2><ul>`);
-
-    for (let i = 1; i <= 10; i++) {
-        document.write(`<li>${num} x ${i} = ${num * i}</li>`);
+        document.write("Tabla no disponible");
+    } else {
+        document.write(`<h2>Tabla del ${num}</h2><ul>`);
+        for (let i = 1; i <= 10; i++) {
+            document.write(`<li>${num} x ${i} = ${num * i}</li>`);
+        }
+        document.write("</ul>");
     }
+}
 
-    document.write("</ul>");
-    } */
-
-    
-    
-    
+mostrarTablaMultiplicar(numero); */
 
 
 
