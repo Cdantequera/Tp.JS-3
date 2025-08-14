@@ -9,7 +9,7 @@ document.write(`<h1>Lista de Meses</h1><ul><li>${meses.join("</li><li>")}</li></
 
 // Solicitar ciudades al usuario
 
-let ciudades = [];
+/* let ciudades = [];
 let ciudad;
 
 while (true) {
@@ -41,14 +41,15 @@ ciudades[1] = "Tucuman";
 document.write("<h2>Lista completa de ciudades:</h2>");
 for (let i = 0; i < ciudades.length; i++) {
     document.write(`<p>. elemento ${i + 1}: ${ciudades[i]}</p>`);
-}
+} */
 
 
 
 
 //ejercicio 3
 
-// no pude
+// no pude  
+
 
 //ejercicio 4
 
@@ -120,6 +121,10 @@ document.write(perimetro); */
 
     document.write("</ul>");
     } */
+
+    
+    
+    
 
 
 
