@@ -7,44 +7,33 @@ document.write(`<h1>Lista de Meses</h1><ul><li>${meses.join("</li><li>")}</li></
 //ejercicio 2
 // Paso 1: Solicitar ciudades al usuario
 
-// Solicitar ciudades al usuario
+let ciudades = [];
+let ciudad = prompt("Ingresa una ciudad (deja vacio o presiona Cancelar para terminar):");
 
-/* let ciudades = [];
-let ciudad;
-
-while (true) {
-    ciudad = prompt("Ingresa una ciudad (deja vacio o presiona Cancelar para terminar):");
-    
-    if (ciudad === null || ciudad.trim() === "") {
-        break;
-    }
-    
+while (ciudad !== null && ciudad.trim() !== "") {
     ciudades.push(ciudad);
+    ciudad = prompt("Ingresa una ciudad (deja vacio o presiona Cancelar para terminar):");
 }
+console.log(ciudades);
+document.writeln(
+    `<p>La cantidad de ciudades ingresadas es: ${ciudades.length}</p>`
+);
+document.writeln(`<p>El elemento en la primera posicion es : ${ciudades[0]}</p>`);
+document.writeln(`<p>El elemento en la tercera posicion es : ${ciudades[2]}</p>`);
+document.writeln(`<p>El ultimo elemento es : ${ciudades[ciudades.length - 1]}</p>`);
 
-// arreglos de ciudades
-document.write("<h1>Arreglos de ciudades</h1>");
-document.write(`<p>El arreglo de ciudades tiene ${ciudades.length} elementos</p>`);
-document.write(`<p>. elemento 1era posicion: ${ciudades[0] || "No disponible"}</p>`);
-document.write(`<p>. elemento 3era posicion: ${ciudades[2] || "No disponible"}</p>`);
-document.write(`<p>. ultimo elemento: ${ciudades[ciudades.length - 1] || "No disponible"}</p>`);
+ciudades.map((ciudad) => document.writeln(`<p>${ciudad.length}</p>`));
 
-// Añade argentina al final
-ciudades.push("Argentina");
-document.write(`<p>. ultimo elemento: ${ciudades[ciudades.length - 1]}</p>`);
+ciudades.push("París");
 
-// añade tucuman 
-document.write(`<p>. elemento segunda posicion: ${ciudades[1] || "No disponible"}</p>`);
-ciudades[1] = "Tucuman";
+document.writeln(`<p>El elemento en la segunda posicion es : ${ciudades[1]}</p>`);
 
-// Mostrar resultado final
-document.write("<h2>Lista completa de ciudades:</h2>");
-for (let i = 0; i < ciudades.length; i++) {
-    document.write(`<p>. elemento ${i + 1}: ${ciudades[i]}</p>`);
-} */
+ciudades.map((ciudad) => document.writeln(`<p>${ciudad.length}</p>`));
+
+ciudades.splice(1, 1, "Barcelona");
 
 
-
+ciudades.map((ciudad) => document.writeln(`<p>${ciudad.length}</p>`));
 
 //ejercicio 3
 
